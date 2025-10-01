@@ -195,9 +195,90 @@ Arduino Cloud es la plataforma en línea de Arduino que permite:
 - Interacción visual mediante dashboards personalizados en la nube.
 
 
+# Raspberry Pi :
 
-- **Raspberry Pi**: Mini-computadora versátil que ejecuta Linux; ideal para proyectos complejos.
+## ¿Qué es?
+La Raspberry Pi es una computadora de bajo costo y tamaño compacto, capaz de ejecutar Linux y conectarse a monitores, teclados y mouse. Permite aprender programación y realizar proyectos de computación y electrónica, desde navegación en internet y multimedia, hasta proyectos de IoT y automatización.
+
+## Hardware
+- Tamaño compacto (tarjeta de crédito)
+- Puertos USB, HDMI, Ethernet, Wi-Fi y Bluetooth
+- Pines GPIO para interactuar con sensores y actuadores
+
+## Sistemas operativos
+- **Raspbian**: Sistema oficial basado en Linux, optimizado para Raspberry Pi.
+- **NOOBS**: Instalador que permite elegir y configurar diferentes sistemas operativos fácilmente.
+- Soporta software para ofimática, programación, multimedia y proyectos IoT.
+
+## Usos comunes
+1. **Mini PC**: navegación, edición de documentos y multimedia.
+2. **Servidor de impresión Wi-Fi**: conectar impresoras antiguas a la red.
+3. **Máquina Arcade**: emulación de consolas clásicas con Recalbox o Retropie.
+4. **Servidor web**: Apache, WordPress, MySQL.
+5. **Reproductor multimedia**: con KODI.
+6. **Sistema NAS**: almacenamiento centralizado con OpenMediaVault.
+7. **Domótica**: control de luces, temperatura, seguridad, y más con Domoticz.
+
+---
+
+## Comparativa Raspberry Pi 4 vs Arduino UNO
+
+| Característica | Arduino UNO | Raspberry Pi 4 |
+|----------------|------------|----------------|
+| Tipo | Microcontrolador | Mini PC |
+| Sistema operativo | Ninguno | Linux (Raspbian) |
+| Pines digitales | 14 | 40 |
+| Pines analógicos | 6 | 0 (requiere ADC externo) |
+| Lenguaje | C/C++ | Python |
+| Multitarea | No | Sí |
+| Uso ideal | Control directo de sensores y actuadores | Procesamiento de datos, multimedia, IoT |
+| Ventaja principal | Respuesta inmediata y control preciso | Potencia de cálculo, multitarea y conectividad |
+
+**Resumen :**  
+- **Raspberry Pi**: ideal para proyectos que requieren potencia de cálculo, multitarea o conectividad.  
+- **Arduino**: más indicado si se necesita control inmediato de sensores y actuadores.  
+- Se pueden combinar ambas plataformas para aprovechar lo mejor de cada una. Ya que arduino recoge datos de sensores y controla actuadores; Raspberry Pi procesa la información, maneja aplicaciones complejas y la sube a la nube.
+
+
 - **ESP32**: Microcontrolador potente con Wi-Fi y Bluetooth integrados; económico y popular en IoT.
+# Exposición: ESP32
+
+## ¿Qué es ESP32?
+El ESP32 es un microcontrolador y SoC (System on Chip) con Wi-Fi y Bluetooth integrados, diseñado por Espressif Systems. Es versátil, compacto y de bajo costo, ideal para proyectos IoT, domótica, robótica, dispositivos portátiles y automatización industrial.
+
+### Características principales
+- **Diseño robusto**: funciona en rangos de temperatura de -40°C a +125°C, confiable en entornos industriales.
+- **Consumo ultrabajo**: ideal para dispositivos móviles y IoT.
+- **Alta integración**: incluye antena, amplificadores, filtros y gestión de energía.
+- **Conectividad**: Wi-Fi, Bluetooth clásico y BLE, soporte para protocolos como Zigbee, ESP-NOW y Matter.
+- **Memoria**: 4MB Flash y ~500KB RAM (PSRAM opcional en versiones avanzadas).
+- **Flexibilidad**: puede funcionar de manera independiente o como periférico de otro microcontrolador.
+
+### Sistemas operativos y lenguajes
+Compatible con múltiples frameworks y lenguajes:
+- Arduino (C/C++)
+- MicroPython (Python)
+- Mongoose OS (JavaScript/C)
+- Espruino (JavaScript)
+- SDK especializados: ESP-IDF, audio ADF, ESP-Mesh, ESP-Matter
+
+### Aplicaciones
+1. **IoT**: sensores, dispositivos domésticos inteligentes.
+2. **Domótica**: luces, termostatos y electrodomésticos controlables vía Wi-Fi/Bluetooth.
+3. **Robótica**: control inalámbrico de robots.
+4. **Dispositivos portátiles**: relojes, rastreadores de actividad, monitores de salud.
+5. **Automatización industrial**: monitorización y control remoto de procesos.
+6. **Monitoreo ambiental**: calidad del aire, clima y contaminación.
+7. **Seguridad y salud**: sistemas de alarma, cámaras, telemedicina.
+8. **Educación y prototipos**: enseñanza de electrónica y programación.
+
+---
+## Ventajas del ESP32
+- Bajo costo y alto rendimiento.
+- Consumo energético optimizado.
+- Amplia compatibilidad con SDK y lenguajes de programación.
+- Ideal para proyectos que requieren conectividad y procesamiento en tiempo real.
+
 
 ### Actividad sugerida
 - **Demostración**: Encender un LED con un sensor en Arduino o ESP32.
@@ -214,7 +295,63 @@ Arduino Cloud es la plataforma en línea de Arduino que permite:
 
 ## VI. Áreas laborales
 
-*(Desarrollar contenido aquí)*  
+## Firmware Developer
+- **Qué hace:**  
+  Desarrolla software cercano al hardware de dispositivos electrónicos, optimizando la comunicación entre microcontroladores, sensores y actuadores. Crea drivers, protocolos de comunicación y algoritmos de control, asegurando eficiencia, estabilidad y bajo consumo energético en sistemas embebidos.
+
+- **Ejemplo de empresas:**  
+  - Empresas como Avient o KLA Tencor contratan ingenieros para trabajar en controladores y microprocesadores industriales.
+  - **Avient:** empresa de materiales avanzados y soluciones tecnológicas.  
+  - **KLA Tencor:** compañía especializada en control de calidad y automatización para semiconductores.
+
+---
+
+## IoT Developer
+- **Qué hace:**  
+  Diseña soluciones que integran dispositivos conectados a internet, permitiendo automatización, monitoreo y análisis de datos en tiempo real. Implementa protocolos como MQTT, HTTP y WebSocket, y asegura la conectividad y seguridad de los dispositivos en la nube.
+
+- **Ejemplo de empresas:**  
+  - Rootstack y Intel Costa Rica desarrollan proyectos IoT para smart cities, monitoreo ambiental y hogares inteligentes.
+  - **Rootstack:** empresa de desarrollo de software y soluciones IoT.  
+  - **Intel Costa Rica:** desarrollo de tecnología y soluciones de conectividad para IoT.
+
+---
+
+## Ingeniero embebido
+- **Qué hace:**  
+  Diseña y programa sistemas con recursos limitados como microcontroladores y FPGA. Optimiza memoria, procesador y energía, desarrollando aplicaciones en robótica, control industrial, electrónica de consumo y dispositivos médicos.
+
+- **Ejemplo de empresas:** 
+  - Fiserv y HP Costa Rica aplican sistemas embebidos en equipos de impresión y terminales de pago.
+  - **Fiserv:** soluciones tecnológicas financieras y sistemas embebidos.  
+  - **HP Costa Rica:** desarrollo de hardware y software integrado para dispositivos electrónicos.
+
+---
+
+## Sectores con creciente demanda
+- **Qué se hace:**  
+  Integración de sensores y actuadores, automatización de procesos, análisis de datos, desarrollo de productos inteligentes y monitoreo remoto de sistemas.
+
+- **Ejemplo de empresas por sector:**  
+  - **Automotriz:**  
+    - BMW Group Costa Rica y Continental Automotive implementan soluciones embebidas para control de vehículos.
+    - **BMW Group Costa Rica:** fabricación y pruebas de componentes automotrices.  
+    - **Continental Automotive:** tecnología y electrónica para vehículos.  
+
+  - **Salud:**  
+    - Hospitales y startups tecnológicas desarrollan dispositivos médicos conectados.
+    - **InnovaTec:** soluciones médicas y tecnología para hospitales.  
+    - **Hospital Clínica Bíblica:** equipos médicos conectados y sistemas inteligentes.  
+
+  - **Domótica:**  
+    - **Smart Home Costa Rica:** automatización residencial y comercial.  
+    - **Tecnosoluciones CR:** integración de dispositivos inteligentes en hogares y oficinas.  
+
+  - **Industria 4.0:**  
+    - Boston Scientific y Abbott aplican sistemas embebidos en maquinaria y monitoreo de procesos.
+    - **Boston Scientific:** dispositivos médicos con control embebido.  
+    - **Abbott:** automatización y monitoreo de procesos industriales.
+ 
 
 ---
 
