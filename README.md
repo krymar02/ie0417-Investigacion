@@ -5,8 +5,8 @@
 ---
 
 ## Estudiantes
-- Daylan
 - María José Guevara Matarrita C13476 
+- Daylan Pereira Arroyo
 - Kryssia Martínez Martínez B84636
 
 ---
@@ -82,7 +82,54 @@ La **M2M** es el intercambio **directo** de datos entre “cosas”, con o sin i
 
 ## IV. Tecnologías clave
  
-*(Desarrollar contenido aquí)*  
+
+### Lenguajes
+- Los lenguajes de programación proporcionan instrucciones al microprocesador, lo que permite que el dispositivo realice operaciones. El compilador actúa como puente entre las instrucciones y el microcontrolador que las ejecuta. La selección de un lenguaje de programación apropiado es fundamental para dar forma a las capacidades y funcionalidades del producto final en sistemas embebidos.
+
+## Lenguajes comunes en sistemas embebidos
+- C
+- C++
+- Assembly
+- BASIC
+- Java
+- JavaScript.
+
+- **C**:  
+  - Lenguaje compilado utilizado para crear aplicaciones de bajo nivel para microcontroladores.
+  - Se utiliza ampliamente en aplicaciones industriales. 
+  - Requiere que los desarrolladores tengan un alto nivel de conocimiento de técnicas de codificación complejas. 
+  - Su dominio en el campo se atribuye a su eficiencia y al control que ofrece sobre los recursos del sistema.
+
+- **C++**:
+    - Lenguaje eficiente con una rica biblioteca estándar. 
+    - Una ventaja de este lenguaje es su capacidad para simplificar el proceso de codificación.
+    - Permite una codificación rápida y sencilla. Sin embargo, puede -Se destaca por sus características orientadas a objetos, lo que permite un desarrollo de código más complejo y modular.
+
+- **Python**:  
+  - Se utiliza ampliamente en automatización.
+  - Incluye el aprendizaje automático, la inteligencia artificial (IA) y el análisis de datos debido a su versatilidad. 
+  - Es de código abierto y gratuito.
+  - Es fácil de aprender y utilizar. 
+  - Permite un rendimiento fluido incluso con recursos informáticos limitados. 
+   - Facilidad de uso de Python y sus amplias bibliotecas lo convierten en una opción cada vez más popular para sistemas embebidos, especialmente en creación de prototipos y aplicaciones de IoT.
+  
+  - Desventajas:
+    - Velocidad lenta de ejecución y sus restricciones de diseño.
+
+## Como elegir el lenguaje adecuado
+ - La elección del lenguaje de programación integrado depende de la familiaridad del programador con el lenguaje, el tipo de proyecto y la industria involucrada, así como los requisitos. Los sistemas embebidos requieren un enfoque estratégico, que equilibre los requisitos del sistema con las capacidades y limitaciones del lenguaje de programación.
+
+### Plataformas
+- **Arduino**:  
+  Fácil de usar en educación y prototipado. Gran comunidad y librerías.  
+- **Raspberry Pi**:  
+  Mini-computadora versátil que ejecuta Linux, ideal para proyectos más complejos.  
+- **ESP32**:  
+  Microcontrolador potente con Wi-Fi y Bluetooth integrados, económico y ampliamente usado en IoT.  
+
+### Actividad sugerida
+- **Demostración**: encender un LED con un sensor en Arduino o ESP32.  
+- **Simulación**: usar Tinkercad Circuits para mostrar un circuito con sensor y LED.  
 
 ---
 
