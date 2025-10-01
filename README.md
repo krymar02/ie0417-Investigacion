@@ -5,8 +5,8 @@
 ---
 
 ## Estudiantes
-- María José
-- Daylan 
+- Daylan
+- María José Guevara Matarrita C13476 
 - Kryssia Martínez Martínez B84636
 
 ---
@@ -37,7 +37,46 @@
 
 ## III. Internet de las Cosas (IoT)
 
-*(Desarrollar contenido aquí)*  
+El **Internet de las Cosas (IoT)** es una **infraestructura socio-técnica** que interconecta **cosas** físicas y virtuales (equipos, sensores, actuadores y objetos cotidianos, así como sistemas industriales) mediante **redes de comunicaciones** y **plataformas de servicios** para **capturar, transportar, procesar y convertir datos en acciones** de forma segura y, en muchos casos, autónoma. Esta visión se alinea con la definición de **ITU-T Y.2060/Y.4000**, que describe a IoT como una “infraestructura global para la sociedad de la información” sustentada en la interconexión de *cosas*, y con el encuadre de **NIST** sobre dispositivos y productos conectados a Internet. [ITU][1], [csrc.nist.gov][2], [NIST][11]
+
+**Arquitectura y flujo de datos (visión por capas):**  
+1) **Capa de percepción**: *cosas* con **sensores** y **actuadores** que miden el entorno y ejecutan órdenes. [ITU][1]  
+2) **Capa de conectividad/red**: redes IP y **gateways** que transportan telemetría y comandos; protocolos ligeros como **MQTT** (modelo *publish/subscribe* con QoS 0/1/2). [OASIS MQTT][3]  
+3) **Capa de servicios/compute**: **edge/fog/cloud** para **ingesta → almacenamiento → análisis/ML → orquestación** (reglas, alertas, control). [ITU][1], [NIST][11]  
+4) **Capa de aplicación**: dashboards, APIs y procesos de negocio que entregan valor (automatización, eficiencia, trazabilidad).
+
+**Capacidades nucleares:**  
+- **Identidad y direccionamiento** por dispositivo (certificados por dispositivo, uso de TLS/IPv6 cuando aplica). [NIST][11]  
+- **Interoperabilidad y gobierno de datos** (modelos de datos, esquemas de tópicos, versionado). [OASIS MQTT][3], [ITU][1]  
+- **Gestión del ciclo de vida**: *provisioning*, configuración, **actualizaciones OTA**, retirada segura. [NIST][11]  
+- **Seguridad desde el diseño**: autenticación mutua, cifrado en tránsito, control de acceso de mínimo privilegio, monitoreo continuo. [NIST][11]
+
+**Modos de interacción:**  
+- **M2M** (dispositivo↔dispositivo o dispositivo↔gateway),  
+- **Device-to-Cloud** y **Cloud-to-Device**, típicamente sobre **MQTT** por su eficiencia y fiabilidad en enlaces inestables. [OASIS MQTT][3]
+
+---
+
+## Sensores y actuadores
+
+- **Sensores:** transductores que **miden** variables físicas (temperatura, humedad, vibración, pH, etc.) y generan datos digitales. (NIST los clasifica como dispositivos IoT típicos). [csrc.nist.gov][2]  
+- **Actuadores:** componentes que **ejecutan acciones** (abrir una válvula, encender un relé, mover un servomotor) a partir de comandos provenientes de la plataforma o de otros dispositivos (modelo “cosas-a-cosas” descrito por ITU). [ITU][1]
+
+---
+
+## Comunicación M2M (machine-to-machine)
+
+La **M2M** es el intercambio **directo** de datos entre “cosas”, con o sin intervención humana. En IoT se implementa comúnmente con **MQTT**, estandarizado por **OASIS** (y también ISO), que define **QoS 0/1/2**, sesiones persistentes y *retain* para asegurar entrega eficiente en redes de baja potencia o alta latencia. [docs.oasis-open.org][3]
+
+---
+
+## Ejemplos por dominio
+
+- **Casas inteligentes:** automatización de iluminación, climatización, seguridad y ahorro energético; arquitecturas con sensores/actuadores y *gateways* hacia la nube. [PMC][4]  
+- **Monitoreo de salud:** telemetría de signos vitales y seguimiento remoto con redes de sensores corporales y *gateways* seguros. [PMC][4]  
+- **Agricultura de precisión:** sensores de suelo/ambiente, estaciones meteorológicas y análisis para optimizar riego y fertilización; beneficios y desafíos (datos, ciberseguridad, adopción). [PMC][5]
+
+> **Interoperabilidad en el hogar:** el estándar **Matter** busca compatibilidad entre marcas y plataformas (Apple/Google/Amazon), reduciendo fricción de integración. [Axios][6]
 
 ---
 
