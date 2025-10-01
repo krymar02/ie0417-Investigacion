@@ -138,30 +138,31 @@ Los lenguajes de programación proporcionan instrucciones al microprocesador, pe
 La elección depende de la familiaridad del programador, el tipo de proyecto, la industria y los requisitos del sistema. Los sistemas embebidos requieren equilibrar necesidades técnicas con capacidades y limitaciones del lenguaje.
 
 ### Plataformas
-##Arduino
+
+## Arduino
+
 ### 1. Qué es Arduino
 Arduino es una plataforma de hardware y software de código abierto que permite a los usuarios crear proyectos electrónicos interactivos. Consiste en placas con microcontroladores y un entorno de desarrollo que facilita programarlas para controlar sensores, actuadores y otros dispositivos electrónicos.
 
-  - Las placas Arduino pueden leer entradas: luz en un sensor, un dedo en un botón o un mensaje de Twitter, y convertirlas en una salida: activar un motor, encender un LED, publicar algo en línea.
-  - Puede indicarle a su placa qué hacer enviando un conjunto de instrucciones al microcontrolador de la placa.
-  - Se utiliza el lenguaje de programación Arduino (basado en Wiring), y el Software Arduino (IDE), basado en Processing. 
-  - Se daptó a nuevas necesidades y desafíos, diferenciando su oferta desde simples placas de 8 bits hasta productos para aplicaciones de IoT, dispositivos portátiles, impresión 3D y entornos integrados.
-
+- Las placas Arduino pueden leer entradas: luz en un sensor, un dedo en un botón o un mensaje de Twitter, y convertirlas en una salida: activar un motor, encender un LED, publicar algo en línea.
+- Puede indicarle a su placa qué hacer enviando un conjunto de instrucciones al microcontrolador de la placa.
+- Se utiliza el lenguaje de programación Arduino (basado en Wiring), y el Software Arduino (IDE), basado en Processing.
+- Se adaptó a nuevas necesidades y desafíos, diferenciando su oferta desde simples placas de 8 bits hasta productos para aplicaciones de IoT, dispositivos portátiles, impresión 3D y entornos integrados.
 
 ### 2. Entorno de Desarrollo Integrado (IDE)
-El IDE de Arduino es un software que permite:
+El IDE de Arduino permite:
 - Escribir, verificar y cargar código en las placas Arduino.
 - Utilizar bibliotecas que agregan funcionalidades, como controlar sensores, pantallas o módulos adicionales.
 - Trabajar tanto en escritorio (Arduino Software IDE) como en línea (Arduino Cloud Editor).
 
 **Tipos de IDE:**
 1. **IDE de escritorio**: Para trabajar sin conexión y con control completo de las bibliotecas.
-2. **Arduino Cloud Editor**: IDE en línea que guarda los bocetos en la nube, actualiza automáticamente las funciones y permite acceder a los proyectos desde cualquier dispositivo conectado.
+2. **Arduino Cloud Editor**: IDE en línea que guarda los bocetos en la nube y permite acceder a los proyectos desde cualquier dispositivo.
 3. **Arduino Cloud**: Plataforma para proyectos IoT; permite monitorear, controlar y rastrear dispositivos de manera remota.
 
 ### 3. Uso del IDE
-- Conecta la placa Arduino al computador, el IDE la reconoce automáticamente.
-- Se pueden cargar **bocetos** (programas) directamente a la placa.
+- Conectar la placa Arduino al computador, el IDE la reconoce automáticamente.
+- Cargar **bocetos** (programas) directamente a la placa.
 - Ejemplo básico: el programa “Blink” hace parpadear un LED integrado en la placa.
 - El IDE permite modificar la velocidad del parpadeo ajustando parámetros en el código.
 
@@ -171,21 +172,20 @@ El IDE de Arduino es un software que permite:
 - Permiten reutilizar código y acceder a ejemplos preconfigurados.
 
 ### 5. Arduino Cloud
-Arduino Cloud es la plataforma en línea de Arduino que permite:
+Arduino Cloud permite:
 - Conectar, monitorear y controlar dispositivos desde cualquier lugar.
-- Crear automáticamente código para los dispositivos, agregando líneas específicas para personalización.
-- Configurar variables y tipos de datos (int, float, boolean, etc.) que se generan en los bocetos.
+- Crear automáticamente código para los dispositivos.
+- Configurar variables y tipos de datos.
 - Conectar dispositivos a Wi-Fi y generar funciones que responden a eventos desde la nube.
 - Crear **paneles de control (dashboards)** para visualizar y controlar los dispositivos de forma gráfica usando **widgets**.
 - Compatible con placas oficiales Arduino (algunas requieren tarjetas SIM o gateways según el modelo).
 
 ### 6. Configuración de red
-- Para conectar dispositivos a Arduino Cloud, se deben permitir ciertos dominios y puertos en firewalls de red:
-  - mqtts-up.iot.arduino.cc → 8884
-  - mqtts-sa.iot.arduino.cc → 8883
-  - wss.iot.arduino.cc → 8443
-  - NTP → puerto 123 UDP
-- Recomendado para redes escolares o domésticas que bloqueen ciertos puertos.
+Para conectar dispositivos a Arduino Cloud, se deben permitir ciertos dominios y puertos en firewalls de red:
+- mqtts-up.iot.arduino.cc → 8884
+- mqtts-sa.iot.arduino.cc → 8883
+- wss.iot.arduino.cc → 8443
+- NTP → puerto 123 UDP
 
 ### 7. Aplicaciones prácticas
 - Educación y prototipado rápido.
@@ -193,8 +193,9 @@ Arduino Cloud es la plataforma en línea de Arduino que permite:
 - Automatización y monitoreo de dispositivos electrónicos.
 - Interacción visual mediante dashboards personalizados en la nube.
 
+---
 
-# Raspberry Pi :
+# Raspberry Pi
 
 ## ¿Qué es?
 La Raspberry Pi es una computadora de bajo costo y tamaño compacto, capaz de ejecutar Linux y conectarse a monitores, teclados y mouse. Permite aprender programación y realizar proyectos de computación y electrónica, desde navegación en internet y multimedia, hasta proyectos de IoT y automatización.
@@ -233,23 +234,23 @@ La Raspberry Pi es una computadora de bajo costo y tamaño compacto, capaz de ej
 | Uso ideal | Control directo de sensores y actuadores | Procesamiento de datos, multimedia, IoT |
 | Ventaja principal | Respuesta inmediata y control preciso | Potencia de cálculo, multitarea y conectividad |
 
-**Resumen :**  
+**Resumen:**  
 - **Raspberry Pi**: ideal para proyectos que requieren potencia de cálculo, multitarea o conectividad.  
-- **Arduino**: más indicado si se necesita control inmediato de sensores y actuadores.  
-- Se pueden combinar ambas plataformas para aprovechar lo mejor de cada una. Ya que arduino recoge datos de sensores y controla actuadores; Raspberry Pi procesa la información, maneja aplicaciones complejas y la sube a la nube.
+- **Arduino**: indicado para control inmediato de sensores y actuadores.  
+- Pueden combinarse para aprovechar lo mejor de cada uno: Arduino recoge datos y controla actuadores; Raspberry Pi procesa información y maneja aplicaciones complejas.
 
+---
 
-- **ESP32**: Microcontrolador potente con Wi-Fi y Bluetooth integrados; económico y popular en IoT.
-# Exposición: ESP32
+# ESP32
 
 ## ¿Qué es ESP32?
 El ESP32 es un microcontrolador y SoC (System on Chip) con Wi-Fi y Bluetooth integrados, diseñado por Espressif Systems. Es versátil, compacto y de bajo costo, ideal para proyectos IoT, domótica, robótica, dispositivos portátiles y automatización industrial.
 
 ### Características principales
-- **Diseño robusto**: funciona en rangos de temperatura de -40°C a +125°C, confiable en entornos industriales.
+- **Diseño robusto**: -40°C a +125°C, confiable en entornos industriales.
 - **Consumo ultrabajo**: ideal para dispositivos móviles y IoT.
-- **Alta integración**: incluye antena, amplificadores, filtros y gestión de energía.
-- **Conectividad**: Wi-Fi, Bluetooth clásico y BLE, soporte para protocolos como Zigbee, ESP-NOW y Matter.
+- **Alta integración**: antena, amplificadores, filtros y gestión de energía integrados.
+- **Conectividad**: Wi-Fi, Bluetooth clásico y BLE; soporte para Zigbee, ESP-NOW y Matter.
 - **Memoria**: 4MB Flash y ~500KB RAM (PSRAM opcional en versiones avanzadas).
 - **Flexibilidad**: puede funcionar de manera independiente o como periférico de otro microcontrolador.
 
@@ -262,8 +263,8 @@ Compatible con múltiples frameworks y lenguajes:
 - SDK especializados: ESP-IDF, audio ADF, ESP-Mesh, ESP-Matter
 
 ### Aplicaciones
-1. **IoT**: sensores, dispositivos domésticos inteligentes.
-2. **Domótica**: luces, termostatos y electrodomésticos controlables vía Wi-Fi/Bluetooth.
+1. **IoT**: sensores y dispositivos domésticos inteligentes.
+2. **Domótica**: control de luces, termostatos y electrodomésticos.
 3. **Robótica**: control inalámbrico de robots.
 4. **Dispositivos portátiles**: relojes, rastreadores de actividad, monitores de salud.
 5. **Automatización industrial**: monitorización y control remoto de procesos.
@@ -272,93 +273,70 @@ Compatible con múltiples frameworks y lenguajes:
 8. **Educación y prototipos**: enseñanza de electrónica y programación.
 
 ---
+
 ## Ventajas del ESP32
 - Bajo costo y alto rendimiento.
 - Consumo energético optimizado.
 - Amplia compatibilidad con SDK y lenguajes de programación.
 - Ideal para proyectos que requieren conectividad y procesamiento en tiempo real.
 
-
 ### Actividad sugerida
 - **Demostración**: Encender un LED con un sensor en Arduino o ESP32.
 - **Simulación**: Usar Tinkercad Circuits para mostrar un circuito con sensor y LED.
-
 
 ---
 
 ## V. Caso práctico
 
-*(Desarrollar contenido aquí)*  
+*(Desarrollar contenido aquí)*
 
 ---
 
 ## VI. Áreas laborales
 
-## Firmware Developer
+### Firmware Developer
 - **Qué hace:**  
-  Desarrolla software cercano al hardware de dispositivos electrónicos, optimizando la comunicación entre microcontroladores, sensores y actuadores. Crea drivers, protocolos de comunicación y algoritmos de control, asegurando eficiencia, estabilidad y bajo consumo energético en sistemas embebidos.
+  Desarrolla software cercano al hardware de dispositivos electrónicos, optimizando comunicación entre microcontroladores, sensores y actuadores. Crea drivers, protocolos de comunicación y algoritmos de control, asegurando eficiencia y bajo consumo energético.
 
 - **Ejemplo de empresas:**  
-  - Empresas como Avient o KLA Tencor contratan ingenieros para trabajar en controladores y microprocesadores industriales.
-  - **Avient:** empresa de materiales avanzados y soluciones tecnológicas.  
-  - **KLA Tencor:** compañía especializada en control de calidad y automatización para semiconductores.
+  - **Avient:** materiales avanzados y soluciones tecnológicas.  
+  - **KLA Tencor:** control de calidad y automatización para semiconductores.
 
----
-
-## IoT Developer
+### IoT Developer
 - **Qué hace:**  
-  Diseña soluciones que integran dispositivos conectados a internet, permitiendo automatización, monitoreo y análisis de datos en tiempo real. Implementa protocolos como MQTT, HTTP y WebSocket, y asegura la conectividad y seguridad de los dispositivos en la nube.
+  Diseña soluciones que integran dispositivos conectados a internet, permitiendo automatización, monitoreo y análisis de datos en tiempo real. Implementa protocolos como MQTT, HTTP y WebSocket.
 
 - **Ejemplo de empresas:**  
-  - Rootstack y Intel Costa Rica desarrollan proyectos IoT para smart cities, monitoreo ambiental y hogares inteligentes.
-  - **Rootstack:** empresa de desarrollo de software y soluciones IoT.  
-  - **Intel Costa Rica:** desarrollo de tecnología y soluciones de conectividad para IoT.
+  - **Rootstack:** desarrollo de software y soluciones IoT.  
+  - **Intel Costa Rica:** soluciones de conectividad para IoT.
 
----
-
-## Ingeniero embebido
+### Ingeniero embebido
 - **Qué hace:**  
-  Diseña y programa sistemas con recursos limitados como microcontroladores y FPGA. Optimiza memoria, procesador y energía, desarrollando aplicaciones en robótica, control industrial, electrónica de consumo y dispositivos médicos.
+  Diseña y programa sistemas con recursos limitados como microcontroladores y FPGA. Optimiza memoria, procesador y energía, desarrollando aplicaciones en robótica, control industrial y dispositivos médicos.
 
-- **Ejemplo de empresas:** 
-  - Fiserv y HP Costa Rica aplican sistemas embebidos en equipos de impresión y terminales de pago.
+- **Ejemplo de empresas:**  
   - **Fiserv:** soluciones tecnológicas financieras y sistemas embebidos.  
-  - **HP Costa Rica:** desarrollo de hardware y software integrado para dispositivos electrónicos.
+  - **HP Costa Rica:** desarrollo de hardware y software integrado.
 
----
-
-## Sectores con creciente demanda
+### Sectores con creciente demanda
 - **Qué se hace:**  
-  Integración de sensores y actuadores, automatización de procesos, análisis de datos, desarrollo de productos inteligentes y monitoreo remoto de sistemas.
+  Integración de sensores y actuadores, automatización de procesos, análisis de datos, desarrollo de productos inteligentes y monitoreo remoto.
 
 - **Ejemplo de empresas por sector:**  
-  - **Automotriz:**  
-    - BMW Group Costa Rica y Continental Automotive implementan soluciones embebidas para control de vehículos.
-    - **BMW Group Costa Rica:** fabricación y pruebas de componentes automotrices.  
-    - **Continental Automotive:** tecnología y electrónica para vehículos.  
-
-  - **Salud:**  
-    - Hospitales y startups tecnológicas desarrollan dispositivos médicos conectados.
-    - **InnovaTec:** soluciones médicas y tecnología para hospitales.  
-    - **Hospital Clínica Bíblica:** equipos médicos conectados y sistemas inteligentes.  
-
-  - **Domótica:**  
-    - **Smart Home Costa Rica:** automatización residencial y comercial.  
-    - **Tecnosoluciones CR:** integración de dispositivos inteligentes en hogares y oficinas.  
-
-  - **Industria 4.0:**  
-    - Boston Scientific y Abbott aplican sistemas embebidos en maquinaria y monitoreo de procesos.
-    - **Boston Scientific:** dispositivos médicos con control embebido.  
-    - **Abbott:** automatización y monitoreo de procesos industriales.
- 
+  - **Automotriz:** BMW Group Costa Rica, Continental Automotive.  
+  - **Salud:** InnovaTec, Hospital Clínica Bíblica.  
+  - **Domótica:** Smart Home Costa Rica, Tecnosoluciones CR.  
+  - **Industria 4.0:** Boston Scientific, Abbott.
 
 ---
 
 ## VII. Conclusiones
-*(Desarrollar contenido aquí)*  
+
+*(Desarrollar contenido aquí)*
 
 ---
 
 ## VIII. Bibliografía en formato IEEE
+
 
 
