@@ -79,57 +79,74 @@ La **M2M** es el intercambio **directo** de datos entre “cosas”, con o sin i
 > **Interoperabilidad en el hogar:** el estándar **Matter** busca compatibilidad entre marcas y plataformas (Apple/Google/Amazon), reduciendo fricción de integración. [Axios][6]
 
 ---
-
 ## IV. Tecnologías clave
- 
 
 ### Lenguajes
-- Los lenguajes de programación proporcionan instrucciones al microprocesador, lo que permite que el dispositivo realice operaciones. El compilador actúa como puente entre las instrucciones y el microcontrolador que las ejecuta. La selección de un lenguaje de programación apropiado es fundamental para dar forma a las capacidades y funcionalidades del producto final en sistemas embebidos.
+Los lenguajes de programación proporcionan instrucciones al microprocesador, permitiendo que el dispositivo realice operaciones. El compilador actúa como puente entre las instrucciones y el microcontrolador que las ejecuta. Seleccionar un lenguaje apropiado es fundamental para definir las capacidades y funcionalidades del producto final en sistemas embebidos.
 
-## Lenguajes comunes en sistemas embebidos
+### Lenguajes comunes en sistemas embebidos
 - C
 - C++
 - Assembly
 - BASIC
 - Java
-- JavaScript.
+- JavaScript
 
-- **C**:  
-  - Lenguaje compilado utilizado para crear aplicaciones de bajo nivel para microcontroladores.
-  - Se utiliza ampliamente en aplicaciones industriales. 
-  - Requiere que los desarrolladores tengan un alto nivel de conocimiento de técnicas de codificación complejas. 
-  - Su dominio en el campo se atribuye a su eficiencia y al control que ofrece sobre los recursos del sistema.
+#### C
+- Lenguaje compilado utilizado para crear aplicaciones de bajo nivel en microcontroladores.
+- Amplio uso en aplicaciones industriales.
+- Requiere conocimientos avanzados de codificación.
+- Destaca por eficiencia y control sobre recursos del sistema.
 
-- **C++**:
-    - Lenguaje eficiente con una rica biblioteca estándar. 
-    - Una ventaja de este lenguaje es su capacidad para simplificar el proceso de codificación.
-    - Permite una codificación rápida y sencilla. Sin embargo, puede -Se destaca por sus características orientadas a objetos, lo que permite un desarrollo de código más complejo y modular.
+#### C++
+- Lenguaje eficiente con biblioteca estándar rica.
+- Facilita codificación modular y rápida gracias a la programación orientada a objetos.
 
-- **Python**:  
-  - Se utiliza ampliamente en automatización.
-  - Incluye el aprendizaje automático, la inteligencia artificial (IA) y el análisis de datos debido a su versatilidad. 
-  - Es de código abierto y gratuito.
-  - Es fácil de aprender y utilizar. 
-  - Permite un rendimiento fluido incluso con recursos informáticos limitados. 
-   - Facilidad de uso de Python y sus amplias bibliotecas lo convierten en una opción cada vez más popular para sistemas embebidos, especialmente en creación de prototipos y aplicaciones de IoT.
-  
-  - Desventajas:
-    - Velocidad lenta de ejecución y sus restricciones de diseño.
+### Ventajas y Desventajas de C++ en Sistemas Embebidos
 
-## Como elegir el lenguaje adecuado
- - La elección del lenguaje de programación integrado depende de la familiaridad del programador con el lenguaje, el tipo de proyecto y la industria involucrada, así como los requisitos. Los sistemas embebidos requieren un enfoque estratégico, que equilibre los requisitos del sistema con las capacidades y limitaciones del lenguaje de programación.
+| Aspecto | Ventajas | Desventajas |
+|---------|----------|-------------|
+| Facilidad de uso y escalabilidad | Diseño modular, plantillas y herencia que facilitan reutilización y escalabilidad | Difícil de aprender; muchas construcciones aumentan la curva de aprendizaje |
+| Portabilidad | Código reutilizable entre dispositivos | Plantillas complejas pueden causar incompatibilidades |
+| Biblioteca estándar | Herramientas optimizadas listas para usar | Uso inadecuado puede afectar rendimiento |
+| Estabilidad y soporte | Programas confiables, comunidad amplia, lenguaje maduro | Mantener bases de código grandes es desafiante |
+| Interoperabilidad y aprendizaje | Facilita aprender otros lenguajes modernos | Gestión manual de memoria; no hay recolector de basura automático |
+| Interfaces gráficas (GUI) | Facilita implementación de GUI | Consumo de recursos mayor que C puro |
+| Rendimiento | Compiladores modernos optimizan velocidad y memoria | Excepciones o RTTI pueden reducir eficiencia; plantillas complejas afectan rendimiento |
+| Mantenimiento y base de código | Diseño modular facilita extensión | Complejidad del lenguaje dificulta mantenimiento; riesgo de inconsistencias |
+
+---
+
+#### Python
+- Lenguaje de programación accesible, fácil de aprender y con sintaxis clara.
+- Popular para prototipos rápidos, automatización y scripting.
+- MicroPython adapta Python a tareas de hardware y sistemas integrados.
+- Ideal para desarrollo ágil, aunque no tan eficiente como C/C++ en tiempo real.
+
+### Ventajas y Desventajas de Python en Sistemas Embebidos
+
+| Aspecto | Ventajas | Desventajas |
+|---------|----------|-------------|
+| Sintaxis y facilidad de uso | Lenguaje accesible, sintaxis clara, rápido desarrollo | No eficiente para tareas críticas de tiempo real |
+| Prototipado rápido | Creación de prototipos ágil, MicroPython para hardware | Limitado al hardware compatible; no ideal para sistemas muy restringidos |
+| Flexibilidad y adaptabilidad | Uso en scripting, automatización y pruebas rápidas; compatible con varias plataformas | Gestión de memoria menos eficiente; velocidad de ejecución más lenta |
+| Comunidad y soporte | Amplia comunidad y gran cantidad de librerías | Algunas librerías estándar no optimizadas para sistemas embebidos |
+| Aplicaciones recomendadas | Prototipos IoT, sistemas educativos, secuencias de comandos | No recomendable para aplicaciones críticas de alto rendimiento o tiempo real |
+
+---
+
+### Cómo elegir el lenguaje adecuado
+La elección depende de la familiaridad del programador, el tipo de proyecto, la industria y los requisitos del sistema. Los sistemas embebidos requieren equilibrar necesidades técnicas con capacidades y limitaciones del lenguaje.
 
 ### Plataformas
-- **Arduino**:  
-  Fácil de usar en educación y prototipado. Gran comunidad y librerías.  
-- **Raspberry Pi**:  
-  Mini-computadora versátil que ejecuta Linux, ideal para proyectos más complejos.  
-- **ESP32**:  
-  Microcontrolador potente con Wi-Fi y Bluetooth integrados, económico y ampliamente usado en IoT.  
+- **Arduino**: Fácil de usar, ideal para educación y prototipado. Gran comunidad y librerías.
+- **Raspberry Pi**: Mini-computadora versátil que ejecuta Linux; ideal para proyectos complejos.
+- **ESP32**: Microcontrolador potente con Wi-Fi y Bluetooth integrados; económico y popular en IoT.
 
 ### Actividad sugerida
-- **Demostración**: encender un LED con un sensor en Arduino o ESP32.  
-- **Simulación**: usar Tinkercad Circuits para mostrar un circuito con sensor y LED.  
+- **Demostración**: Encender un LED con un sensor en Arduino o ESP32.
+- **Simulación**: Usar Tinkercad Circuits para mostrar un circuito con sensor y LED.
+
 
 ---
 
