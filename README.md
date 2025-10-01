@@ -57,20 +57,20 @@ El **Internet de las Cosas (IoT)** es una **infraestructura socio-técnica** que
 
 ---
 
-## Sensores y actuadores
+### Sensores y actuadores
 
 - **Sensores:** transductores que **miden** variables físicas (temperatura, humedad, vibración, pH, etc.) y generan datos digitales. (NIST los clasifica como dispositivos IoT típicos). [csrc.nist.gov][2]  
 - **Actuadores:** componentes que **ejecutan acciones** (abrir una válvula, encender un relé, mover un servomotor) a partir de comandos provenientes de la plataforma o de otros dispositivos (modelo “cosas-a-cosas” descrito por ITU). [ITU][1]
 
 ---
 
-## Comunicación M2M (machine-to-machine)
+### Comunicación M2M (machine-to-machine)
 
 La **M2M** es el intercambio **directo** de datos entre “cosas”, con o sin intervención humana. En IoT se implementa comúnmente con **MQTT**, estandarizado por **OASIS** (y también ISO), que define **QoS 0/1/2**, sesiones persistentes y *retain* para asegurar entrega eficiente en redes de baja potencia o alta latencia. [docs.oasis-open.org][3]
 
 ---
 
-## Ejemplos por dominio
+### Ejemplos por dominio
 
 - **Casas inteligentes:** automatización de iluminación, climatización, seguridad y ahorro energético; arquitecturas con sensores/actuadores y *gateways* hacia la nube. [PMC][4]  
 - **Monitoreo de salud:** telemetría de signos vitales y seguimiento remoto con redes de sensores corporales y *gateways* seguros. [PMC][4]  
