@@ -139,7 +139,63 @@ Los lenguajes de programación proporcionan instrucciones al microprocesador, pe
 La elección depende de la familiaridad del programador, el tipo de proyecto, la industria y los requisitos del sistema. Los sistemas embebidos requieren equilibrar necesidades técnicas con capacidades y limitaciones del lenguaje.
 
 ### Plataformas
-- **Arduino**: Fácil de usar, ideal para educación y prototipado. Gran comunidad y librerías.
+##Arduino
+### 1. Qué es Arduino
+Arduino es una plataforma de hardware y software de código abierto que permite a los usuarios crear proyectos electrónicos interactivos. Consiste en placas con microcontroladores y un entorno de desarrollo que facilita programarlas para controlar sensores, actuadores y otros dispositivos electrónicos.
+
+  - Las placas Arduino pueden leer entradas: luz en un sensor, un dedo en un botón o un mensaje de Twitter, y convertirlas en una salida: activar un motor, encender un LED, publicar algo en línea.
+  - Puede indicarle a su placa qué hacer enviando un conjunto de instrucciones al microcontrolador de la placa.
+  - Se utiliza el lenguaje de programación Arduino (basado en Wiring), y el Software Arduino (IDE), basado en Processing. 
+  - Se daptó a nuevas necesidades y desafíos, diferenciando su oferta desde simples placas de 8 bits hasta productos para aplicaciones de IoT, dispositivos portátiles, impresión 3D y entornos integrados.
+
+
+### 2. Entorno de Desarrollo Integrado (IDE)
+El IDE de Arduino es un software que permite:
+- Escribir, verificar y cargar código en las placas Arduino.
+- Utilizar bibliotecas que agregan funcionalidades, como controlar sensores, pantallas o módulos adicionales.
+- Trabajar tanto en escritorio (Arduino Software IDE) como en línea (Arduino Cloud Editor).
+
+**Tipos de IDE:**
+1. **IDE de escritorio**: Para trabajar sin conexión y con control completo de las bibliotecas.
+2. **Arduino Cloud Editor**: IDE en línea que guarda los bocetos en la nube, actualiza automáticamente las funciones y permite acceder a los proyectos desde cualquier dispositivo conectado.
+3. **Arduino Cloud**: Plataforma para proyectos IoT; permite monitorear, controlar y rastrear dispositivos de manera remota.
+
+### 3. Uso del IDE
+- Conecta la placa Arduino al computador, el IDE la reconoce automáticamente.
+- Se pueden cargar **bocetos** (programas) directamente a la placa.
+- Ejemplo básico: el programa “Blink” hace parpadear un LED integrado en la placa.
+- El IDE permite modificar la velocidad del parpadeo ajustando parámetros en el código.
+
+### 4. Bibliotecas
+- Proporcionan funcionalidades adicionales para manejar hardware y datos.
+- Pueden instalarse desde el IDE de escritorio o Arduino Cloud Editor.
+- Permiten reutilizar código y acceder a ejemplos preconfigurados.
+
+### 5. Arduino Cloud
+Arduino Cloud es la plataforma en línea de Arduino que permite:
+- Conectar, monitorear y controlar dispositivos desde cualquier lugar.
+- Crear automáticamente código para los dispositivos, agregando líneas específicas para personalización.
+- Configurar variables y tipos de datos (int, float, boolean, etc.) que se generan en los bocetos.
+- Conectar dispositivos a Wi-Fi y generar funciones que responden a eventos desde la nube.
+- Crear **paneles de control (dashboards)** para visualizar y controlar los dispositivos de forma gráfica usando **widgets**.
+- Compatible con placas oficiales Arduino (algunas requieren tarjetas SIM o gateways según el modelo).
+
+### 6. Configuración de red
+- Para conectar dispositivos a Arduino Cloud, se deben permitir ciertos dominios y puertos en firewalls de red:
+  - mqtts-up.iot.arduino.cc → 8884
+  - mqtts-sa.iot.arduino.cc → 8883
+  - wss.iot.arduino.cc → 8443
+  - NTP → puerto 123 UDP
+- Recomendado para redes escolares o domésticas que bloqueen ciertos puertos.
+
+### 7. Aplicaciones prácticas
+- Educación y prototipado rápido.
+- Proyectos IoT con control remoto de sensores y actuadores.
+- Automatización y monitoreo de dispositivos electrónicos.
+- Interacción visual mediante dashboards personalizados en la nube.
+
+
+
 - **Raspberry Pi**: Mini-computadora versátil que ejecuta Linux; ideal para proyectos complejos.
 - **ESP32**: Microcontrolador potente con Wi-Fi y Bluetooth integrados; económico y popular en IoT.
 
