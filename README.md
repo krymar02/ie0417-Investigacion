@@ -36,15 +36,39 @@ Por estas razones, la programación en sistemas embebidos no puede ser tratada d
 
 ## II. Ejemplos de sistemas embebidos
   
-# Ejemplos de sistemas embebidos
 
-Los sistemas embebidos están presentes en una gran variedad de dispositivos de uso cotidiano y en aplicaciones críticas. Un ejemplo claro se encuentra en los **automóviles**, donde estos sistemas controlan funciones como los frenos ABS, el encendido del motor y los sistemas de infoentretenimiento. Gracias a ellos, la conducción es más segura, eficiente y cómoda, pues permiten tomar decisiones rápidas en tiempo real, como ajustar la tracción en una curva o activar el frenado automático.  
 
-En el ámbito de la **medicina**, los sistemas embebidos son vitales para el funcionamiento de dispositivos como los marcapasos o las bombas de insulina. Estos equipos requieren precisión y confiabilidad absoluta, ya que están directamente relacionados con la salud y la vida de las personas. La programación en este tipo de sistemas debe ser robusta y estar preparada para responder en cualquier condición, minimizando riesgos y garantizando la operación continua.  
+Los sistemas embebidos están presentes en una gran cantidad de aplicaciones de la vida diaria y de la industria. A continuación, se presentan diez ejemplos reales resumidos:
 
-Los **electrodomésticos** modernos también dependen de sistemas embebidos para ofrecer funcionalidades inteligentes. Lavadoras, refrigeradores y hornos cuentan con microcontroladores que gestionan ciclos de lavado, regulan temperaturas, detectan fallas y en algunos casos se conectan a internet para facilitar el control remoto. Esto no solo mejora la experiencia del usuario, sino que también contribuye a un uso más eficiente de la energía y los recursos.  
+### 1. Automóviles
+Los automóviles modernos utilizan sistemas embebidos para controlar funciones como los frenos ABS, la gestión del motor, los sistemas de navegación y el entretenimiento a bordo. Estos sistemas permiten mayor seguridad, eficiencia y confort en la conducción.
 
-Finalmente, los **wearables** como relojes inteligentes y pulseras de actividad son otro ejemplo cotidiano del uso de sistemas embebidos. Estos dispositivos recopilan información sobre el estado físico del usuario, como la frecuencia cardíaca, el sueño o los pasos diarios, y procesan los datos en tiempo real para ofrecer retroalimentación inmediata. Además, integran conectividad con teléfonos móviles y otros dispositivos, lo que demuestra la importancia de los sistemas embebidos en el Internet de las Cosas (IoT).  
+### 2. Dispositivos médicos
+En la medicina, los sistemas embebidos son vitales en equipos como marcapasos, bombas de insulina y monitores cardíacos. Su confiabilidad y precisión resultan esenciales al estar directamente relacionados con la salud de los pacientes.
+
+### 3. Electrodomésticos inteligentes
+Lavadoras, refrigeradores y hornos modernos incorporan sistemas embebidos que permiten automatizar ciclos, regular temperaturas, optimizar el consumo de energía y ofrecer control remoto a través de internet.
+
+### 4. Maquinaria industrial
+En la industria, se utilizan en robots, control de procesos y maquinaria automatizada. Estos sistemas embebidos incrementan la productividad, reducen errores humanos y mejoran la seguridad en el entorno laboral.
+
+### 5. Telecomunicaciones
+Routers, antenas y equipos de red contienen sistemas embebidos que gestionan el tráfico de datos, mantienen la conectividad estable y facilitan la comunicación global.
+
+### 6. Sistemas de seguridad
+Cámaras inteligentes, sensores de movimiento y alarmas utilizan sistemas embebidos para procesar información en tiempo real y responder de manera inmediata ante posibles riesgos.
+
+### 7. Wearables
+Relojes inteligentes y pulseras de actividad recopilan datos de salud como frecuencia cardíaca, pasos o calidad del sueño. Estos dispositivos procesan la información en tiempo real y ofrecen retroalimentación inmediata al usuario.
+
+### 8. Aviación y transporte
+Los aviones dependen de sistemas embebidos para la gestión de vuelo y control de instrumentos, mientras que en el transporte público se utilizan en sistemas de semáforos, peajes electrónicos y control de rutas.
+
+### 9. Agricultura
+La agricultura moderna integra sistemas embebidos en sensores y sistemas de riego automático, lo que permite optimizar el uso del agua, mejorar la producción y supervisar cultivos en tiempo real.
+
+### 10. Dispositivos IoT
+Asistentes de voz, casas inteligentes y dispositivos conectados dependen de sistemas embebidos que se comunican entre sí, creando entornos inteligentes donde la automatización y la conectividad son clave.
 
 ---
 
