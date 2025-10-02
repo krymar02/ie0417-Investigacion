@@ -36,7 +36,15 @@ Por estas razones, la programación en sistemas embebidos no puede ser tratada d
 
 ## II. Ejemplos de sistemas embebidos
   
-*(Desarrollar contenido aquí)*  
+# Ejemplos de sistemas embebidos
+
+Los sistemas embebidos están presentes en una gran variedad de dispositivos de uso cotidiano y en aplicaciones críticas. Un ejemplo claro se encuentra en los **automóviles**, donde estos sistemas controlan funciones como los frenos ABS, el encendido del motor y los sistemas de infoentretenimiento. Gracias a ellos, la conducción es más segura, eficiente y cómoda, pues permiten tomar decisiones rápidas en tiempo real, como ajustar la tracción en una curva o activar el frenado automático.  
+
+En el ámbito de la **medicina**, los sistemas embebidos son vitales para el funcionamiento de dispositivos como los marcapasos o las bombas de insulina. Estos equipos requieren precisión y confiabilidad absoluta, ya que están directamente relacionados con la salud y la vida de las personas. La programación en este tipo de sistemas debe ser robusta y estar preparada para responder en cualquier condición, minimizando riesgos y garantizando la operación continua.  
+
+Los **electrodomésticos** modernos también dependen de sistemas embebidos para ofrecer funcionalidades inteligentes. Lavadoras, refrigeradores y hornos cuentan con microcontroladores que gestionan ciclos de lavado, regulan temperaturas, detectan fallas y en algunos casos se conectan a internet para facilitar el control remoto. Esto no solo mejora la experiencia del usuario, sino que también contribuye a un uso más eficiente de la energía y los recursos.  
+
+Finalmente, los **wearables** como relojes inteligentes y pulseras de actividad son otro ejemplo cotidiano del uso de sistemas embebidos. Estos dispositivos recopilan información sobre el estado físico del usuario, como la frecuencia cardíaca, el sueño o los pasos diarios, y procesan los datos en tiempo real para ofrecer retroalimentación inmediata. Además, integran conectividad con teléfonos móviles y otros dispositivos, lo que demuestra la importancia de los sistemas embebidos en el Internet de las Cosas (IoT).  
 
 ---
 
