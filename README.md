@@ -24,7 +24,12 @@
 
 ## I. Introducción a los sistemas embebidos
  
-*(Desarrollar contenido aquí)*  
+
+Un sistema embebido se define como un conjunto de hardware y software diseñado para cumplir funciones específicas dentro de un dispositivo, a diferencia de un computador personal que está orientado a tareas de propósito general. Estos sistemas suelen estar integrados en equipos cotidianos como automóviles, electrodomésticos, dispositivos médicos o relojes inteligentes, y operan de manera automática y casi invisible para el usuario. Su presencia en la vida diaria es fundamental, pues permiten optimizar procesos, mejorar la seguridad, facilitar la conectividad y brindar comodidad en múltiples ámbitos.  
+
+A diferencia del software tradicional que corre en un PC con abundantes recursos de memoria, procesadores potentes y sistemas operativos complejos, los sistemas embebidos deben trabajar con capacidades mucho más limitadas y con un nivel de programación cercano al hardware. Esto implica que el software se desarrolla en lenguajes de bajo nivel como C o ensamblador, que permiten controlar directamente registros, temporizadores y periféricos. Además, muchos sistemas embebidos deben garantizar respuestas en tiempo real, lo cual significa que no basta con que funcionen correctamente, sino que deben hacerlo en un tiempo preciso para cumplir su objetivo, como ocurre con los frenos ABS de un automóvil o con un marcapasos.  
+
+ 
 
 ---
 
